@@ -1,0 +1,200 @@
+/* Common Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+a {
+    text-decoration: none;
+}
+/* Common Rules End */
+/* Main Section Start */
+main {
+    min-height: 100vh;
+    background-color: var(--violet);
+    padding: 25px 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Main Section End */
+/* Logo Section Start */
+.logo img {
+    width: 160px;
+    height: auto;
+}
+/* Logo Section End */
+/* Main Content Section Start */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2vh 0;
+}
+.mockup-image {
+    width: 50%;
+}
+.mockup-image img {
+    max-width: 100%;
+    height: auto;
+}
+.summary {
+    width: 45%;
+}
+.summary h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.summary p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0;
+}
+.summary a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--violet);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 25px;
+}
+.summary a:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+/* Main Content Section End */
+/* Social Links Section Start */
+.links-container {
+    display: flex;
+}
+.links-container a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.links-container a:hover {
+    border-color: var(--soft-magenta);
+}
+.links-container a:hover i {
+    color: var(--soft-magenta);
+}
+/* Social Links Section End */
+/* Responsive Screen Layout */
+/* Mobile Screen */
+@media (min-width: 320px) and (max-width: 1023px) {
+    /* Main Section Start */
+    main {
+        background-image: url("../images/bg-mobile.svg");
+    }
+    /* Main Section End */
+    /* Main Content Section Start */
+    .mockup-image {
+        width: 100%;
+    }
+    .summary {
+        width: 100%;
+        text-align: center;
+    }
+    .summary h1 {
+        width: 100%;
+        margin-top: 80px;
+    }
+    .summary p {
+        width: 100%;
+    }
+    .summary a {
+        width: 50%;
+        margin: 30px auto 0;
+    }
+    /* Main Content Section End */
+    /* Social Links Section Start */
+    .links-container {
+        justify-content: center;
+        margin-top: 100px;
+    }
+    /* Social Links Section End */
+}
+/* Desktop Screen */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* Main Section Start */
+    main {
+        background-image: url("../images/bg-desktop.svg");
+    }
+    /* Main Section End */
+    /* Main Content Section Start */
+    .mockup-image {
+        width: 50%;
+    }
+    .summary {
+        width: 45%;
+        padding-top: 30px;
+    }
+    .summary h1 {
+        width: 70%;
+    }
+    .summary p {
+        width: 70%;
+    }
+    .summary a {
+        width: 30%;
+    }
+    /* Main Content Section End */
+    /* Social Links Section Start */
+    .links-container {
+        justify-content: flex-end;
+    }
+    /* Social Links Section End */
+}
+/* Large Desktop Screen */
+@media (min-width: 1441px) {
+    /* Main Section Start */
+    main {
+        background-image: url("../images/bg-desktop.svg");
+    }
+    /* Main Section End */
+    /* Main Content Section Start */
+    .content-container {
+        width: 70%;
+        height: 70vh;
+        margin: 8vh auto;
+    }
+    .mockup-image {
+        width: 50%;
+    }
+    .summary {
+        width: 45%;
+        padding-top: 30px;
+    }
+    .summary h1 {
+        width: 60%;
+    }
+    .summary p {
+        width: 60%;
+    }
+    .summary a {
+        width: 20%;
+    }
+    /* Main Content Section End */
+    /* Social Links Section Start */
+    .links-container {
+        justify-content: flex-end;
+    }
+    /* Social Links Section End */
+}
